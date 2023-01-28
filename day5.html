@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Property</title>
+    <style>
+        #myid{
+            border: 1px solid black;
+            width: 50%;
+            height: 100px;
+            background-color: rgb(31, 133, 223);
+        }
+
+        .myname{
+            border: 1px solid black;
+            width: 50%;
+            height: 100px;
+            background-color: aqua  ;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex grow property</h1> <!-- to make the content size large -->
+    <div style="border: 1px solid red; display: flex; width: 100%;height: 100px;">
+        <div style="border: 1px solid black; flex-grow: 2;">
+            First
+        </div>
+        <div style="border: 1px solid black; flex-grow: 1;">
+            second
+        </div>
+        <div style="border: 1px solid black; flex-grow: 3; ">
+            Third
+        </div>
+    </div>
+
+
+
+
+
+
+    <h1>flex Wrap property</h1> <!-- too wrap the content means responsivnase-->
+    <div style="border: 1px solid red; display: flex; flex-wrap: wrap; width: 100%;">
+        <div style="border: 1px solid black; width: 30%; height: 100px; ">
+            First
+        </div>
+        <div style="border: 1px solid black; width: 30%;  ">
+            second
+        </div>
+        <div style="border: 1px solid black; width: 30%;  ">
+            Third
+        </div>
+        <div style="border: 1px solid black;width: 30%; height: 100px;  ">
+            Fourth
+        </div>
+    </div>
+
+
+
+
+
+    <h1>flex no-Wrap property</h1>
+    <div style="border: 1px solid red; display: flex; flex-wrap: nowrap; width: 100%;">
+        <div style="border: 1px solid black; width: 30%; height: 100px;">
+            First
+        </div>
+        <div style="border: 1px solid black; width: 30%;  ">
+            second
+        </div>
+        <div style="border: 1px solid black; width: 30%;  ">
+            Third
+        </div>
+        <div style="border: 1px solid black;width: 30%;   ">
+            Fourth
+        </div>
+    </div>
+
+
+
+
+
+    <h1>flex wrap-reverse property</h1> <!-- to reverse the content-->
+    <div style="border: 1px solid red; display:flex; flex-wrap: wrap-reverse; width: 100%;">
+        <div style="border: 1px solid black; width: 30%;  height: 100px;">
+            First
+        </div>
+        <div style="border: 1px solid black; width: 30%;  ">
+            second
+        </div>
+        <div style="border: 1px solid black; width: 30%;  ">
+            Third
+        </div>
+        <div style="border: 1px solid black;width: 30%;height: 100px; ">
+            Fourth
+        </div>
+    </div>
+
+
+
+
+
+    <h1>flex shrink property</h1> <!-- To make the content size small(shrink)-->
+    <div style="border: 1px solid red; display:flex; width: 100%;">
+        <div style="border: 1px solid black; width: 30%;  height: 100px;">
+            First
+        </div>
+        <div style="border: 1px solid black; width: 30%; flex-shrink: 20;">
+            second
+        </div>
+        <div style="border: 1px solid black; width: 30%; ">
+            Third
+        </div>
+        <div style="border: 1px solid black;width: 30%;height: 100px; ">
+            Fourth
+        </div>
+    </div>
+
+
+
+
+    <h1>flex basis property</h1> <!-- To define the  width as same as width-->
+    <div style="border: 1px solid red; display:flex; width: 100%;">
+        <div style="border: 1px solid black; flex-basis: 30%;  height: 100px;">
+            First
+        </div>
+        <div style="border: 1px solid black; flex-basis: 30%;">
+            second
+        </div>
+        <div style="border: 1px solid black; flex-basis: 30%; ">
+            Third
+        </div>
+        <div style="border: 1px solid black; flex-basis: 30%;height: 100px; ">
+            Fourth
+        </div>
+    </div>
+
+
+
+
+
+    <h1>flex flow property</h1> 
+      <!-- The combination of two property flex direction + flex wrap
+         flex-flow: row nowrap;
+         flex-flow: row-reverse nowrap 
+         flex-flow: column nowrap;
+         flex-flow: column-reverse wrap;
+         flex-flow: row wrap;
+         flex-flow: column wrap;     -->
+ 
+    <div style="border: 1px solid red; display:flex; flex-flow: row-reverse nowrap; width: 100%;">
+        <div style="border: 1px solid black; flex-basis: 30%;  height: 100px;">
+            First
+        </div>
+        <div style="border: 1px solid black; flex-basis: 30%;">
+            second
+        </div>
+        <div style="border: 1px solid black; flex-basis: 30%;">
+            Third
+        </div>
+        <div style="border: 1px solid black; flex-basis: 30%;height: 100px; ">
+            Fourth
+        </div>
+    </div>
+    <br>
+    <div style="border: 1px solid black; height: 300px; width: 100%;">
+        <div id="myid">
+            This is the first id
+        </div>
+         <div class="myname">
+            This is the first class  
+         </div>
+         <div>
+
+         </div>
+    </div>
+             
+ 
+</body>
+
+</html>
