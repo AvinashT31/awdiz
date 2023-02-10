@@ -32,7 +32,37 @@ else{
 }
 
 // Modulus
-   
+ 
+// Q - display the number is even or odd
+var UserNumber = 99;
+if(UserNumber % 2 == 0){
+    console.log("The number will be even")
+}else{
+    console.log("The number will be odd")
+}
+
+var UserNumber = 102;
+if(UserNumber % 2 == 0){
+    console.log("The number will be even")
+}else{
+    console.log("The number will be odd")
+}
+
+
+// switch Case
+ var number = 5;
+ switch(number){
+    case 1:
+        console.log("The number is 1");
+        break;
+    case 2:
+        console.log("The number is 2");
+        break;
+    default:
+        console.log("The number is between 1 to 5");
+ }
+
+
 
 
   
