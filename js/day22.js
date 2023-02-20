@@ -30,7 +30,7 @@ function addTodo(){
     if(gettingTodos){
         console.log(gettingTodos,"gettingTodos");
         var myTodosFromLS = JSON.parse(localStorage.getItem("Todos")) || [];
-        myTodosFromLS.push(gettingTodos);
+        myTodosFromLS.push(gettingTodos);8
         // console.log(myTodosFromLS,"myTodosFromLS");
         localStorage.setItem("Todos", JSON.stringify(myTodosFromLS));
         document.getElementById('todoHere').value = "";
