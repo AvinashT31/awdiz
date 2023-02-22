@@ -18,7 +18,7 @@
  
 // To add the data 
 // function addTodo() {
-//     var gettingTodos = document.getElementById('todoHere').value;
+     //     var gettingTodos = document.getElementById('todoHere').value;
 //     console.log(gettingTodos,"gettingTodos");
 //     alert('Added');     
 // }
@@ -28,7 +28,7 @@ function addTodo(){
     var gettingTodos = document.getElementById('todoHere').value;
 
     if(gettingTodos){
-        console.log(gettingTodos,"gettingTodos");
+    console.log(gettingTodos,"gettingTodos");
         var myTodosFromLS = JSON.parse(localStorage.getItem("Todos")) || [];
         myTodosFromLS.push(gettingTodos);
         // console.log(myTodosFromLS,"myTodosFromLS");
@@ -48,7 +48,7 @@ function cs(){
 
      var gettingTodosFromLS = JSON.parse(localStorage.getItem("Todos"));
      console.log(gettingTodosFromLS, "gettingTodosFromLS");
-
+ 
      var finalstructure = [`<div id="row">
      <p>task</p> <p>completed</p>
      </div>`]
