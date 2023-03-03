@@ -36,8 +36,8 @@
 
 // Q.10 find given number is present in given array or not, if found return true else false
 
-var array = [1,2,443,454,232,546,23,567,676,2342,565,4,2,6]
-var number = 6;
+// var array = [1,2,443,454,232,546,23,567,676,2342,565,4,2,6]
+// var number = 6;
 
 // Number1 = array.includes(number);
 // console.log(Number1, "Number1");
@@ -49,18 +49,40 @@ var number = 6;
 // }
 
 
-var falg = false;
+// var falg = false;
 
 
-for (var i = 0; i < array.length; i++) {
-    if (array [i] == number){
-        // console.log(number, "number")
-        falg = true;
+// for (var i = 0; i < array.length; i++) {
+//     if (array [i] == number){
+//         // console.log(number, "number")
+//         falg = true;
+//     }
+// }
+
+// if (falg) {
+//     console.log("true")
+// } else {
+//     console.log("false");
+
+
+// Q.10 find out number from 689 from given array
+//      then print only "Got it" if found  then  return "not found"
+
+var array = [2,4,6,23,56,3224,454,23,54,56,232,689,233]
+var number = 689;
+
+
+var flag = false;
+
+for(var i=0; i < array.length; i++){
+    if(number === array[i].length){
+        flag = true;
     }
 }
 
-if (falg) {
-    console.log("true")
-} else {
-    console.log("false");
+if(flag === true){
+    console.log("Got it");
+}
+else{
+    console.log("Not Found");
 }
