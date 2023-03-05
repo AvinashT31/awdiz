@@ -68,21 +68,32 @@
 // Q.10 find out number from 689 from given array
 //      then print only "Got it" if found  then  return "not found"
 
-var array = [2,4,6,23,56,3224,454,23,54,56,232,689,233]
-var number = 689;
+// var array = [2,4,6,23,56,3224,454,23,54,56,232,689,233]
+// var number = 689;
 
 
-var flag = false;
+// var flag = false;
+
+// for(var i=0; i < array.length; i++){
+//     if(number === array[i].length){
+//         flag = true;
+//     }
+// }
+
+// if(flag === true){
+//     console.log("Got it");
+// }
+// else{
+//     console.log("Not Found");
+// }
+
+// Q.11 Given an array, make an object with key of that specific index with value
+
+var array = [9,8,7,6,5,4,3,2,1,0]
+
+var result = {};
 
 for(var i=0; i < array.length; i++){
-    if(number === array[i].length){
-        flag = true;
-    }
+   result [i] = array[i];
 }
-
-if(flag === true){
-    console.log("Got it");
-}
-else{
-    console.log("Not Found");
-}
+console.log(result);
